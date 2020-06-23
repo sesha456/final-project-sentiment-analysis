@@ -1,0 +1,32 @@
+Multinomial naive bayes
+
+Confusion matrix
+ [[1664  755]
+ [ 580 4007]]
+
+Multinomial
+Accuracy 0.8094490436768484
+precision score when 0 is considered 0.7415329768270945
+precision score when 1 is considered 0.8414531709365812
+recall score when 0 is considered 0.6878875568416701
+recall score when 1 is considered 0.8735557008938304
+f1 score when 0 is considered 0.713703624276217
+f1 score when 1 is considered 0.857203979035191
+
+
+
+k-fold cross validation report:
+accuracies is  [0.81027104 0.82097004 0.8137045  0.80085653 0.80585296 0.8137045
+ 0.82155603 0.81441827 0.8137045  0.79728765 0.81084939 0.80513919
+ 0.81798715 0.79800143 0.82655246 0.81441827 0.78943612 0.81870093
+ 0.80442541 0.81727338]
+mean accuracy is 0.8107554874702296
+std  accuracy is 0.009148250247233003
+              precision    recall  f1-score   support
+
+           0       0.74      0.69      0.71      2419
+           1       0.84      0.87      0.86      4587
+
+    accuracy                           0.81      7006
+   macro avg       0.79      0.78      0.79      7006
+weighted avg       0.81      0.81      0.81      7006
