@@ -24,11 +24,6 @@ build/
 .env
 .env.local
 
-# Model files (optional, if too large)
-*.pkl
-final.pkl
-final_vector.pkl
-
 # Temporary files
 *.log
 result.txt
