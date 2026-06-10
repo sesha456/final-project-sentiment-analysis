@@ -4,6 +4,7 @@ import pickle
 from regex_extract import user_data
 from sklearn.feature_extraction.text import CountVectorizer
 import nltk
+import os
 
 
 app = Flask(__name__)
@@ -28,4 +29,5 @@ def predict():
         return render_template("index.html",prediction_text="It is a Negative Sentiment.")
 
 if __name__ == "__main__":
-    app.run(debug=True,port=8000)
+    port = int(os.environ.get("PORT", 8000))
+    app.run(debug=False, host="0.0.0.0", port=port)
