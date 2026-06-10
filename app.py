@@ -6,6 +6,11 @@ from sklearn.feature_extraction.text import CountVectorizer
 import nltk
 import os
 
+# Download required NLTK data on startup
+try:
+    nltk.data.find('corpora/stopwords')
+except LookupError:
+    nltk.download('stopwords')
 
 app = Flask(__name__)
 model = pickle.load(open("final.pkl","rb"))
